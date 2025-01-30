@@ -34,6 +34,7 @@ export default function App() {
   }
 
   return (
+    <Authenticator hideSignUp={true}>
     <Authenticator>
       {({ signOut, user }) => (
         <main>
@@ -46,6 +47,7 @@ export default function App() {
      
         </main>
       )}
+    </Authenticator>
     </Authenticator>
   );  
 }
